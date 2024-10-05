@@ -21,18 +21,22 @@ Each condition includes multiple samples of multichannel time-series data. The d
 
 ## Project Structure
 ├── data/
-│ ├── X_train.npy
-│ ├── X_test.npy
-│ ├── y_train.npy
-│ └── y_test.npy
+│   ├── X_train.npy
+│   ├── X_test.npy
+│   ├── y_train.npy
+│   ├── y_test.npy
 ├── models/
-│ ├── cnn1d_model.py
-│ ├── fault_classifier_time.pth │ └── fault_classifier_fft.pth ├── scripts/
-│ ├── create_train_test_data.py │ ├── training_time_model.py
-│ ├── training_fft_model.py
-│ └── utils.py
+│   ├── cnn1d_model.py
+│   ├── fault_classifier_time.pth
+│   ├── fault_classifier_fft.pth
+├── scripts/
+│   ├── create_train_test_data.py
+│   ├── training_time_model.py
+│   ├── training_fft_model.py
+│   └── utils.py
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+
 
 ### Directory Descriptions
 - `data/`: Contains the training and testing datasets.
