@@ -21,27 +21,26 @@ Each condition includes multiple samples of multichannel time-series data. The d
 
 ## Project Structure
 ├── data/
-│   ├── X_train.npy
-│   ├── X_test.npy
-│   ├── y_train.npy
-│   ├── y_test.npy
+│ ├── X_train.npy
+│ ├── X_test.npy
+│ ├── y_train.npy
+│ └── y_test.npy
 ├── models/
-│   ├── cnn1d_model.py
-│   ├── fault_classifier_time.pth
-│   ├── fault_classifier_fft.pth
-├── scripts/
-│   ├── create_train_test_data.py
-│   ├── training_time_model.py
-│   ├── training_fft_model.py
-│   └── utils.py
+│ ├── cnn1d_model.py
+│ ├── fault_classifier_time.pth │ └── fault_classifier_fft.pth ├── scripts/
+│ ├── create_train_test_data.py │ ├── training_time_model.py
+│ ├── training_fft_model.py
+│ └── utils.py
 ├── README.md
-├── requirements.txt
+└── requirements.txt
 
-data/: Contains the training and testing datasets.
-models/: Contains the model definition and saved model weights.
-scripts/: Contains scripts for data preparation and model training.
-README.md: Project documentation.
-requirements.txt: List of required Python packages.
+### Directory Descriptions
+- `data/`: Contains the training and testing datasets.
+- `models/`: Contains the model definition and saved model weights.
+- `scripts/`: Contains scripts for data preparation and model training.
+- `README.md`: Project documentation.
+- `requirements.txt`: List of required Python packages.
+
 
 ## Data Preparation
 The create_train_test_data.py script loads the raw data from the dataset directory, assigns labels based on the fault condition, and splits the data into training and testing sets with stratification.
