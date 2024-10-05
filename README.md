@@ -20,6 +20,7 @@ Looseness
 Each condition includes multiple samples of multichannel time-series data. The data files are stored in NumPy .npy format.
 
 ## Project Structure
+```
 ├── data/
 │   ├── X_train.npy
 │   ├── X_test.npy
@@ -36,7 +37,7 @@ Each condition includes multiple samples of multichannel time-series data. The d
 │   └── utils.py
 ├── README.md
 ├── requirements.txt
-
+```
 
 ### Directory Descriptions
 - `data/`: Contains the training and testing datasets.
