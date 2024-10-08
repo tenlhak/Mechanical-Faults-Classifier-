@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-class FaultClassifierCNN_time(nn.Module):
+class FaultClassifierCNN_time(nn.Module):            #model for time domain analysis 
     def __init__(self):
         super(FaultClassifierCNN_time, self).__init__()
         self.conv1 = nn.Conv1d(in_channels=4, out_channels=32, kernel_size=7)
@@ -37,7 +37,7 @@ class FaultClassifierCNN_time(nn.Module):
         x = self.fc2(x)
         return x
 
-class FaultClassifierCNN_frequency(nn.Module):
+class FaultClassifierCNN_frequency(nn.Module):                #model for frequency domain analysis (fft)
     def __init__(self):
         super(FaultClassifierCNN_frequency, self).__init__()
         self.conv1 = nn.Conv1d(in_channels=4, out_channels=32, kernel_size=7)
